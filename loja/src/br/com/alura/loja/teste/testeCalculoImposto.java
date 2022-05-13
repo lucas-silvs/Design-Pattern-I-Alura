@@ -9,11 +9,12 @@ import br.com.alura.loja.orcamento.Orcamento;
 import java.math.BigDecimal;
 
 public class testeCalculoImposto {
-
+    // Desingn Pattern - Strategy
     public static void main(String[] args) {
+
         CalculadoraDeImpostos calculadoraDeImpostos = new CalculadoraDeImpostos();
         Imposto icms = new ICMS();
-        Orcamento orcamento = new Orcamento(new BigDecimal(100));
+        Orcamento orcamento = new Orcamento(new BigDecimal(100),1);
 
         System.out.println("ICMS: "+calculadoraDeImpostos.calcular(icms,orcamento));
 
