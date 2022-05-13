@@ -4,7 +4,7 @@ import br.com.alura.loja.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
-//Classe de desconto abstrata que vai ser herdada por cada desconto que será verificado
+//Pattern Chain of Responsability - Classe de desconto abstrata que vai ser herdada por cada desconto que será verificado
 public abstract class Desconto {
 
     protected Desconto proximo;
