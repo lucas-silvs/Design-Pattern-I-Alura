@@ -1,15 +1,11 @@
 package br.com.alura.loja.teste;
 
 import br.com.alura.loja.desconto.CalculadoraDeDesconto;
-import br.com.alura.loja.imposto.CalculadoraDeImpostos;
-import br.com.alura.loja.imposto.ICMS;
-import br.com.alura.loja.imposto.ISS;
-import br.com.alura.loja.imposto.Imposto;
 import br.com.alura.loja.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
-public class testeCalculoDesconto {
+public class TesteCalculoDesconto {
 // Desingn Pattern - Chain of Responsability
     public static void main(String[] args) {
 

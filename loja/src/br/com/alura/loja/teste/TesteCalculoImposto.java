@@ -8,7 +8,7 @@ import br.com.alura.loja.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
-public class testeCalculoImposto {
+public class TesteCalculoImposto {
     // Desingn Pattern - Strategy
     public static void main(String[] args) {
 
