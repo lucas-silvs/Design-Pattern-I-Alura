@@ -59,7 +59,12 @@ public class Orcamento implements Orcavel{
         return quantidadeItens;
     }
 
-    public BigDecimal getValor() {
+    public BigDecimal getValor()  {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return valor;
     }
 
@@ -69,7 +74,12 @@ public class Orcamento implements Orcavel{
     }
 
     public void adicionarItem(Orcavel itemOrcamento){
-        this.valor = this.valor.add(itemOrcamento.getValor());
+        try {
+            this.valor = this.valor.add(itemOrcamento.getValor());
+        }catch (InterruptedException e){
+
+        }
+
         this.itensOrcamento.add(itemOrcamento);
     }
 }
