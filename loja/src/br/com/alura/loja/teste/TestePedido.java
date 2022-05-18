@@ -32,6 +32,27 @@ public class TestePedido {
 
 
 
+        /*
+        Exemplo do Pattern Facade - Transferencia bancária entre duas contas
+        Antes do Facade:
+        Conta minhaConta = new Conta(); -- supondo que está pegando os dados da conta em um banco de dados
+        Conta outraConta = new Conta();
+
+        // se analisar, a ordem que os métodos são chamados importam, por isso se o cliente não souber a ordem correta, pode ser realizada uma
+        transferencia indevida
+        BigDecimal valorDaTransferencia = new BigDecimal("100");
+        Transferencia transferencia = new Transferencia();
+        transferencia,validarConta(minhaConta);
+        transferencia,validarConta(outraConta);
+        transferencia.checarSaldo(minhaConta), valorDaTransferencia;
+        transferencia.executar(minhaConta, outraConta, valorDaTransferencia);
+
+        Apos a implementação do Facade:
+        // se analisar, o cliente só precisar chamar o método executar, não sendo necessário se importar com a ordem de chamada de métodos
+        transferencia.executar(minhaConta, outraConta, valorDaTransferencia); -- abstraiu os detalhes para realizar uma transferencia
+
+         */
+
 
     }
 
